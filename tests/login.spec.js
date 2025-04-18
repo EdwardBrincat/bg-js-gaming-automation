@@ -1,44 +1,38 @@
 const { test, expect } = require('@playwright/test');
-const users = require('../test-data/users'); 
+const { LoginPage } = require('../pages/LoginPage');
+const { CatalogPage } = require('../pages/CatalogPage');
+const users = require('../test-data/Users'); 
+const standardUser = users.find(user => user.username === 'standard_user');
 
-test.describe('Login Tests for Multiple Users', () => {
+test.describe('Login Feature - Login Tests for Multiple Users Scenario', () => {
     for (const { username, password, expectedUrl } of users) {
-        test(`login scenario for ${username}`, async ({ page }) => {
-    
-        await page.goto('https://www.saucedemo.com/');
+                test(`Login Scenario for ${username}`, async ({ page }) => {
+            
+                const loginPage = new LoginPage(page);
 
-        await page.fill('input[data-test="username"]', username);  
-        await page.fill('input[data-test="password"]', password);
-
-        await page.click('input[data-test="login-button"]'); 
-
-        await page.waitForLoadState('load');
-
-        switch(username) {
-            case "standard_user":
-              await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');      
-              break;
-            case "locked_out_user":
-              const Error = await page.locator('[data-test="error"]').textContent();
-              expect(Error).toBe('Epic sadface: Sorry, this user has been locked out.');
-              break; 
-            case "problem_user":
-                await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html'); 
-              break;               
-            case "performance_glitch_user":
-              await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html'); 
-              break; 
-            case "error_user":
-                await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
-                break; 
-            case "visual_user":
-                await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');    
-                break; 
-            default:
-                throw new Error(`Unexpected value: ${value}. Test failed because no case matched.`);
-          }
-    
-        
+                await loginPage.goto();
+                await loginPage.login(username, password);
+                await loginPage.expectUserLoginOutput(username);        
         });
     }
-  });
+});  
+
+test('Login Feature - Login and Logout Successfully Scenario', async ({ page }) => {
+    const loginPage = new LoginPage(page);
+    const catalogPage = new CatalogPage(page);
+
+    await loginPage.goto();
+    await loginPage.login(standardUser.username, standardUser.password); 
+    await loginPage.expectUserLoginOutput(standardUser.username);    
+    await catalogPage.openBurgerMenu();
+    await catalogPage.logout();
+    await loginPage.expectMainLoginPage();
+});
+
+test('Login Feature - Login Negative Path -Incorrect Password Scenario', async ({ page }) => {
+    const loginPage = new LoginPage(page);
+    await loginPage.goto();
+    await loginPage.login(standardUser.username, "password1234"); 
+    await loginPage.expectErrorMessage('Epic sadface: Username and password do not match any user in this service');
+});
+   

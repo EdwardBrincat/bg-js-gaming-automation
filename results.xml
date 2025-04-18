@@ -1,0 +1,20 @@
+<testsuites id="" name="" tests="8" failures="0" skipped="0" errors="0" time="20.834097">
+<testsuite name="tests\login.spec.js" timestamp="2025-04-18T14:50:13.576Z" hostname="" tests="8" failures="0" skipped="0" time="18.704" errors="0">
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for standard_user" classname="tests\login.spec.js" time="1.91">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for locked_out_user" classname="tests\login.spec.js" time="1.399">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for problem_user" classname="tests\login.spec.js" time="1.328">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for performance_glitch_user" classname="tests\login.spec.js" time="6.662">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for error_user" classname="tests\login.spec.js" time="1.606">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for visual_user" classname="tests\login.spec.js" time="1.597">
+</testcase>
+<testcase name="Login Feature - Login and Logout Successfully Scenario" classname="tests\login.spec.js" time="2.52">
+</testcase>
+<testcase name="Login Feature - Login Negative Path -Incorrect Password Scenario" classname="tests\login.spec.js" time="1.682">
+</testcase>
+</testsuite>
+</testsuites>
