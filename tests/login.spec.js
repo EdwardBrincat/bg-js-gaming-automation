@@ -25,7 +25,7 @@ test('Login Feature - Login and Logout Successfully Scenario', async ({ page }) 
     await loginPage.login(standardUser.username, standardUser.password); 
     await loginPage.expectUserLoginOutput(standardUser.username);    
     await catalogPage.openBurgerMenu();
-    await catalogPage.logout();
+    await catalogPage.clickLogoutLink();
     await loginPage.expectMainLoginPage();
 });
 
