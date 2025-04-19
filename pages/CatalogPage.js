@@ -1,5 +1,7 @@
 const { expect } = require('@playwright/test');
 const ProductModel = require('../models/ProductModel');
+const config = require('../config/config');
+const catalogUrl = config.baseUrl + 'inventory.html'
 
 exports.CatalogPage = class CatalogPage {
     constructor(page) {
@@ -212,4 +214,26 @@ exports.CatalogPage = class CatalogPage {
         const isVisible = await this.AllThingsRemoveCart.isVisible();
         expect(isVisible).toBeTruthy();
     }
+
+    async clickAddProductButton(product) {
+        const elements = await this.page.locator('[data-test="inventory-item"]').elementHandles();
+    
+        for (const elementHandle of elements) {            
+            const nameHandle = await elementHandle.$('.inventory_item_name');
+            const nameText = await nameHandle?.innerText();
+            if(nameText === product) {
+                const AddToCartButton = await elementHandle.$('button'); 
+                if (AddToCartButton) {
+                    await AddToCartButton.click();
+                }
+                break;
+            }           
+        }
+    }
+
+    async expectCatalogPage() {
+        await this.page.waitForLoadState('load');  
+        await this.page.waitForURL(catalogUrl);
+        await expect(this.page).toHaveURL(catalogUrl);  
+      }
 };

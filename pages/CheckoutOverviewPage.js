@@ -47,7 +47,7 @@ exports.CheckoutOverviewPage = class CheckoutOverviewPage {
         await this.FinishButton.click();
     }
 
-    async getCartProductDetails() {
+    async getOverviewProductDetails() {
         const productList = [];
     
         const elements = await this.page.locator('[data-test="inventory-item"]').elementHandles();
@@ -69,32 +69,48 @@ exports.CheckoutOverviewPage = class CheckoutOverviewPage {
         return productList;
     }
 
-    async validateProductList(expectedCartProducts) {
-        const actualCartProducts = await this.getCartProductDetails();
+    async validateOverviewProductList(expectedOverviewProducts) {
+        const actualOverviewProducts = await this.getOverviewProductDetails();
 
-        for (let i = 0; i < expectedProducts.length; i++) {
-            expect(actualProducts[i].name).toBe(expectedProducts[i].name);
-            expect(actualProducts[i].price).toBe(expectedProducts[i].price);
+        for (let i = 0; i < expectedOverviewProducts.length; i++) {
+            expect(actualOverviewProducts[i].name).toBe(expectedOverviewProducts[i].name);
+            expect(actualOverviewProducts[i].price).toBe(expectedOverviewProducts[i].price);
         }
     }
 
     async expectPaymentInformationVeriofied(payment) {
-        await expect(this.PaymentInformationText).toBe(payment); 
+        const paymentInformationText = await this.PaymentInformationText?.innerText();
+        await expect(paymentInformationText).toBe(payment); 
     }
 
     async expectShippingInformationVerified(shipping) {
-        await expect(this.ShippingInformationText).toBe(shipping); 
+        const shippingInformationText = await this.ShippingInformationText?.innerText();
+        await expect(shippingInformationText).toBe(shipping); 
     }
 
-    async expectItemTotalVerified(items) {
-        await expect(this.ItemTotalText).toBe(items); 
+    async expectItemTotalVerified(expectedCartProducts) {
+        const totalAmount = expectedCartProducts.reduce((sum, item) => {
+            return sum + parseFloat(item.price.replace('$', ''));
+        }, 0);
+
+        const expectedText = `Item total: $${totalAmount.toFixed(2)}`;
+        const itemTotalText = await this.ItemTotalText?.innerText();
+        await expect(itemTotalText).toBe(expectedText);
     }
 
     async expectTaxVerified(tax) {
-        await expect(this.TaxText).toBe(tax); 
+        const taxText = await this.TaxText?.innerText();
+        await expect(taxText).toBe(tax); 
     }
 
-    async expectTotalVerified(total) {
-        await expect(this.TotalText).toBe(total); 
+    async expectTotalVerified(expectedCartProducts,tax ) {
+        const totalAmount = expectedCartProducts.reduce((sum, item) => {
+            return sum + parseFloat(item.price.replace('$', ''));
+        }, 0);        
+        const taxAmount = parseFloat(tax.replace('Tax: $', ''));
+        const total = (totalAmount + taxAmount).toFixed(2);
+        const expectedText = `Total: $${total}`;        
+        const totalText = await this.TotalText?.innerText();
+        await expect(totalText).toBe(expectedText); 
     }
 };

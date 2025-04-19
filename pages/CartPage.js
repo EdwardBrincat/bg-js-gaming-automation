@@ -63,12 +63,12 @@ exports.CartPage = class CartPage {
         return productList;
     }
 
-    async validateProductList(expectedCartProducts) {
+    async expectCartProductsToBeVisible(expectedCartProducts) {
         const actualCartProducts = await this.getCartProductDetails();
 
-        for (let i = 0; i < expectedProducts.length; i++) {
-            expect(actualProducts[i].name).toBe(expectedProducts[i].name);
-            expect(actualProducts[i].price).toBe(expectedProducts[i].price);
+        for (let i = 0; i < expectedCartProducts.length; i++) {
+            expect(actualCartProducts[i].name).toBe(expectedCartProducts[i].name);
+            expect(actualCartProducts[i].price).toBe(expectedCartProducts[i].price);
         }
     }
 

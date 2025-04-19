@@ -9,9 +9,9 @@ exports.CheckoutCompletePage = class CheckoutCompletePage {
         this.AboutMenuLink = page.locator('a[data-test="about-sidebar-link"]');
         this.LogoutMenuLink = page.locator('a[data-test="logout-sidebar-link"]');
         this.ResetAppStateMenuLink = page.locator('a[data-test="reset-sidebar-link"]');  
-        this.OrderConfirmationImage = page.locator('img[class="pony-express"]');
+        this.OrderConfirmationImage = page.locator('img[data-test="pony-express"]');
         this.OrderConfirmationHeader = page.locator('h2[data-test="complete-header"]');
-        this.OrderConfirmationText = page.locator('h2[data-test="complete-text"]');
+        this.OrderConfirmationText = page.locator('div[data-test="complete-text"]');
         this.BackHomeButton =  page.locator('button[data-test="back-to-products"]'); 
     }
   
@@ -42,14 +42,12 @@ exports.CheckoutCompletePage = class CheckoutCompletePage {
     }    
 
     async expectBackHomeButtonToBeVisible() {
-        await this.FinishButton.waitFor({ state: 'visible' });
-        const isVisible = await this.FinishButton.isVisible();
+        await this.BackHomeButton.waitFor({ state: 'visible' });
+        const isVisible = await this.BackHomeButton.isVisible();
         expect(isVisible).toBeTruthy();
     }      
 
     async clickBackHomeButton() {
         await this.BackHomeButton.click();
-    }
-
-    
+    }    
 };

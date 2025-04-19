@@ -9,11 +9,11 @@ exports.CheckoutInformationPage = class CheckoutInformationPage {
         this.AboutMenuLink = page.locator('a[data-test="about-sidebar-link"]');
         this.LogoutMenuLink = page.locator('a[data-test="logout-sidebar-link"]');
         this.ResetAppStateMenuLink = page.locator('a[data-test="reset-sidebar-link"]');     
-        this.FirstnameInput = page.locator('input[data-test="firstname"]'); 
-        this.LastnameInput = page.locator('input[data-test="lastname"]'); 
+        this.FirstnameInput = page.locator('input[data-test="firstName"]'); 
+        this.LastnameInput = page.locator('input[data-test="lastName"]'); 
         this.PostalCodeInput = page.locator('input[data-test="postalCode"]'); 
-        this.CancelButton = page.locator('button[data-test="cancel"]'); 
-        this.ContinueButton =  page.locator('button[data-test="conitinue"]'); 
+        this.CancelButton = page.locator('input[data-test="cancel"]'); 
+        this.ContinueButton =  page.locator('input[data-test="continue"]'); 
     }
   
     async openBurgerMenu() {
