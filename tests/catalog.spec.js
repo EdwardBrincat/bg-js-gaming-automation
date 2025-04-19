@@ -4,6 +4,10 @@ const { CatalogPage } = require('../pages/CatalogPage');
 
 const users = require('../test-data/Users'); 
 const standardUser = users.find(user => user.username === 'standard_user');
+
+// The expected products are usually retrieved from an API reponse. But for the sake of this test, these are 
+// being hardcoded here for assertion purposes.
+// In a real-world scenario, you would fetch this data from the API and use it for validation.
 const expectedProducts = [
     { name: 'Sauce Labs Backpack', price: '$29.99' },
     { name: 'Sauce Labs Bike Light', price: '$9.99' },

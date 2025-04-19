@@ -39,7 +39,11 @@ exports.CatalogPage = class CatalogPage {
 
     async clickResetAppStateLink() {
         await this.ResetAppStateMenuLink.click();
-      }
+    }
+
+    async clickShoppingCartLink() {
+        await this.ShoppingcartBadge.click();
+    }
 
     async getProductDetails() {
         const productList = [];

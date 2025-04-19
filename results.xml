@@ -1,6 +1,26 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="6.382550000000745">
-<testsuite name="tests\catalog.spec.js" timestamp="2025-04-18T16:20:31.821Z" hostname="" tests="1" failures="0" skipped="0" time="3.517" errors="0">
-<testcase name="Catalog Feature - Adding or Removing Products to cart will increase or decrease number of items in cart" classname="tests\catalog.spec.js" time="3.517">
+<testsuites id="" name="" tests="10" failures="0" skipped="0" errors="0" time="22.467221000000002">
+<testsuite name="tests\catalog.spec.js" timestamp="2025-04-19T05:25:51.799Z" hostname="" tests="2" failures="0" skipped="0" time="7.946" errors="0">
+<testcase name="Catalog Feature - Products loaded within catalog are verified against api reponse" classname="tests\catalog.spec.js" time="3.951">
+</testcase>
+<testcase name="Catalog Feature - Adding or Removing Products to cart will increase or decrease number of items in cart" classname="tests\catalog.spec.js" time="3.995">
+</testcase>
+</testsuite>
+<testsuite name="tests\login.spec.js" timestamp="2025-04-19T05:25:51.799Z" hostname="" tests="8" failures="0" skipped="0" time="19.891" errors="0">
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for standard_user" classname="tests\login.spec.js" time="2.9">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for locked_out_user" classname="tests\login.spec.js" time="2.031">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for problem_user" classname="tests\login.spec.js" time="1.624">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for performance_glitch_user" classname="tests\login.spec.js" time="6.574">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for error_user" classname="tests\login.spec.js" time="1.557">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for visual_user" classname="tests\login.spec.js" time="1.409">
+</testcase>
+<testcase name="Login Feature - Login and Logout Successfully Scenario" classname="tests\login.spec.js" time="2.379">
+</testcase>
+<testcase name="Login Feature - Login Negative Path -Incorrect Password Scenario" classname="tests\login.spec.js" time="1.417">
 </testcase>
 </testsuite>
 </testsuites>

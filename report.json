@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "reporter": [
@@ -50,7 +50,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "",
         "name": "",
@@ -64,7 +64,7 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.52.0",
     "workers": 6,
     "webServer": null
@@ -76,6 +76,40 @@
       "column": 0,
       "line": 0,
       "specs": [
+        {
+          "title": "Catalog Feature - Products loaded within catalog are verified against api reponse",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3951,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-19T05:25:52.880Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9ee61ac6524cce265393-d17244516ca57e3bbb1d",
+          "file": "tests/catalog.spec.js",
+          "line": 16,
+          "column": 1
+        },
         {
           "title": "Catalog Feature - Adding or Removing Products to cart will increase or decrease number of items in cart",
           "ok": true,
@@ -89,15 +123,15 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 10,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3517,
+                  "duration": 3995,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-18T16:20:32.740Z",
+                  "startTime": "2025-04-19T05:25:57.527Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -111,13 +145,303 @@
           "column": 1
         }
       ]
+    },
+    {
+      "title": "tests\\login.spec.js",
+      "file": "tests/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login Feature - Login and Logout Successfully Scenario",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2379,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-19T05:26:09.716Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1b71af24692d2ed6cb3f-343cd220d242aabd3db7",
+          "file": "tests/login.spec.js",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "Login Feature - Login Negative Path -Incorrect Password Scenario",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1417,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-19T05:26:12.104Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1b71af24692d2ed6cb3f-cb86fbcb6df6ecc7ed4e",
+          "file": "tests/login.spec.js",
+          "line": 32,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "Login Feature - Login Tests for Multiple Users Scenario",
+          "file": "tests/login.spec.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login Scenario for standard_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2900,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-19T05:25:52.827Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b71af24692d2ed6cb3f-cb1afacebf0075438e8d",
+              "file": "tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            },
+            {
+              "title": "Login Scenario for locked_out_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2031,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-19T05:25:56.486Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b71af24692d2ed6cb3f-7dab537a6fba72efd63b",
+              "file": "tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            },
+            {
+              "title": "Login Scenario for problem_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1624,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-19T05:25:58.525Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b71af24692d2ed6cb3f-031195906b95d95d5e2d",
+              "file": "tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            },
+            {
+              "title": "Login Scenario for performance_glitch_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6574,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-19T05:26:00.155Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b71af24692d2ed6cb3f-e820038026021125e866",
+              "file": "tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            },
+            {
+              "title": "Login Scenario for error_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1557,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-19T05:26:06.739Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b71af24692d2ed6cb3f-b211bec3fd21590f9d31",
+              "file": "tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            },
+            {
+              "title": "Login Scenario for visual_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1409,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-19T05:26:08.300Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1b71af24692d2ed6cb3f-4191db684171e8198ac3",
+              "file": "tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            }
+          ]
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-18T16:20:30.827Z",
-    "duration": 6382.550000000745,
-    "expected": 1,
+    "startTime": "2025-04-19T05:25:51.660Z",
+    "duration": 22467.221,
+    "expected": 10,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
