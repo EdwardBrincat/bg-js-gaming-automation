@@ -1,12 +1,12 @@
 const { test, expect } = require('@playwright/test');
-const { LoginPage } = require('../pages/LoginPage');
-const { CatalogPage } = require('../pages/CatalogPage');
-const { CartPage } = require('../pages/CartPage');
-const { CheckoutInformationPage } = require('../pages/CheckoutInformationPage');
-const { CheckoutOverviewPage } = require('../pages/CheckoutOverviewPage');
-const { CheckoutCompletePage } = require('../pages/CheckoutCompletePage');
+const { LoginPage } = require('../../pages/LoginPage');
+const { CataloguePage } = require('../../pages/CataloguePage');
+const { CartPage } = require('../../pages/CartPage');
+const { CheckoutInformationPage } = require('../../pages/CheckoutInformationPage');
+const { CheckoutOverviewPage } = require('../../pages/CheckoutOverviewPage');
+const { CheckoutCompletePage } = require('../../pages/CheckoutCompletePage');
 
-const users = require('../test-data/Users'); 
+const users = require('../../test-data/Users'); 
 const standardUser = users.find(user => user.username === 'standard_user');
 
 // The expected products are usually retrieved from an API reponse. But for the sake of this test, these are 
@@ -19,7 +19,7 @@ const expectedCartProducts = [
 
 test('Order Feature - The user performs an order successfully', async ({ page }) => {
     const loginPage = new LoginPage(page);
-    const catalogPage = new CatalogPage(page);
+    const cataloguePage = new CataloguePage(page);
     const cartPage = new CartPage(page);
     const checkoutInformationPage = new CheckoutInformationPage(page);
     const checkoutOverviewPage = new CheckoutOverviewPage(page);
@@ -29,10 +29,10 @@ test('Order Feature - The user performs an order successfully', async ({ page })
     await loginPage.login(standardUser.username, standardUser.password); 
     
     for (const product of expectedCartProducts) {
-        await catalogPage.clickAddProductButton(product.name);
+        await cataloguePage.clickAddProductButton(product.name);
     }
 
-    await catalogPage.clickShoppingCartLink();    
+    await cataloguePage.clickShoppingCartLink();    
     await cartPage.expectCartProductsToBeVisible(expectedCartProducts);
     await cartPage.expectContinueShoppingButtonToBeVisible();
     await cartPage.expectCheckoutButtonToBeVisible();
@@ -51,5 +51,5 @@ test('Order Feature - The user performs an order successfully', async ({ page })
     await checkoutCompletePage.expectOrderConfirmationTextToBeVisible();
     await checkoutCompletePage.expectBackHomeButtonToBeVisible();
     await checkoutCompletePage.clickBackHomeButton();
-    await catalogPage.expectCatalogPage();
+    await cataloguePage.expectCataloguePage();
 });

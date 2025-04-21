@@ -1,9 +1,9 @@
 const { expect } = require('@playwright/test');
 const ProductModel = require('../models/ProductModel');
 const config = require('../config/config');
-const catalogUrl = config.baseUrl + 'inventory.html'
+const catalogueUrl = config.baseUrl + 'inventory.html'
 
-exports.CatalogPage = class CatalogPage {
+exports.CataloguePage = class CataloguePage {
     constructor(page) {
         this.page = page;
         this.burgerMenuButton = page.locator('button[id="react-burger-menu-btn"]');
@@ -231,9 +231,9 @@ exports.CatalogPage = class CatalogPage {
         }
     }
 
-    async expectCatalogPage() {
+    async expectCataloguePage() {
         await this.page.waitForLoadState('load');  
-        await this.page.waitForURL(catalogUrl);
-        await expect(this.page).toHaveURL(catalogUrl);  
+        await this.page.waitForURL(catalogueUrl);
+        await expect(this.page).toHaveURL(catalogueUrl);  
       }
 };

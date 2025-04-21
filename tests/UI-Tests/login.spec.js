@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
-const { LoginPage } = require('../pages/LoginPage');
-const { CatalogPage } = require('../pages/CatalogPage');
-const users = require('../test-data/Users'); 
+const { LoginPage } = require('../../pages/LoginPage');
+const { CataloguePage } = require('../../pages/CataloguePage');
+const users = require('../../test-data/Users'); 
 const standardUser = users.find(user => user.username === 'standard_user');
 
 test.describe('Login Feature - Login Tests for Multiple Users Scenario', () => {
@@ -19,13 +19,13 @@ test.describe('Login Feature - Login Tests for Multiple Users Scenario', () => {
 
 test('Login Feature - Login and Logout Successfully Scenario', async ({ page }) => {
     const loginPage = new LoginPage(page);
-    const catalogPage = new CatalogPage(page);
+    const cataloguePage = new CataloguePage(page);
 
     await loginPage.goto();
     await loginPage.login(standardUser.username, standardUser.password); 
     await loginPage.expectUserLoginOutput(standardUser.username);    
-    await catalogPage.openBurgerMenu();
-    await catalogPage.clickLogoutLink();
+    await cataloguePage.openBurgerMenu();
+    await cataloguePage.clickLogoutLink();
     await loginPage.expectMainLoginPage();
 });
 

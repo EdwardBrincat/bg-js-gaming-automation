@@ -71,429 +71,21 @@
   },
   "suites": [
     {
-      "title": "tests\\catalog.spec.js",
-      "file": "tests/catalog.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Catalog Feature - Products loaded within catalog are verified against api reponse",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 4524,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-21T11:14:07.040Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "9ee61ac6524cce265393-d17244516ca57e3bbb1d",
-          "file": "tests/catalog.spec.js",
-          "line": 20,
-          "column": 1
-        },
-        {
-          "title": "Catalog Feature - Adding or Removing Products to cart will increase or decrease number of items in cart",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2460,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-21T11:14:11.732Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "9ee61ac6524cce265393-ddd9373949751c0a152b",
-          "file": "tests/catalog.spec.js",
-          "line": 30,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "tests\\login.spec.js",
-      "file": "tests/login.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Login Feature - Login and Logout Successfully Scenario",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 1852,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-21T11:14:21.504Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "1b71af24692d2ed6cb3f-343cd220d242aabd3db7",
-          "file": "tests/login.spec.js",
-          "line": 20,
-          "column": 1
-        },
-        {
-          "title": "Login Feature - Login Negative Path -Incorrect Password Scenario",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 869,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-21T11:14:23.359Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "1b71af24692d2ed6cb3f-cb86fbcb6df6ecc7ed4e",
-          "file": "tests/login.spec.js",
-          "line": 32,
-          "column": 1
-        }
-      ],
-      "suites": [
-        {
-          "title": "Login Feature - Login Tests for Multiple Users Scenario",
-          "file": "tests/login.spec.js",
-          "line": 7,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Login Scenario for standard_user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 4054,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-21T11:14:07.138Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1b71af24692d2ed6cb3f-cb1afacebf0075438e8d",
-              "file": "tests/login.spec.js",
-              "line": 9,
-              "column": 17
-            },
-            {
-              "title": "Login Scenario for locked_out_user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1306,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-21T11:14:11.343Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1b71af24692d2ed6cb3f-7dab537a6fba72efd63b",
-              "file": "tests/login.spec.js",
-              "line": 9,
-              "column": 17
-            },
-            {
-              "title": "Login Scenario for problem_user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1012,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-21T11:14:12.654Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1b71af24692d2ed6cb3f-031195906b95d95d5e2d",
-              "file": "tests/login.spec.js",
-              "line": 9,
-              "column": 17
-            },
-            {
-              "title": "Login Scenario for performance_glitch_user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 6044,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-21T11:14:13.669Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1b71af24692d2ed6cb3f-e820038026021125e866",
-              "file": "tests/login.spec.js",
-              "line": 9,
-              "column": 17
-            },
-            {
-              "title": "Login Scenario for error_user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 865,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-21T11:14:19.716Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1b71af24692d2ed6cb3f-b211bec3fd21590f9d31",
-              "file": "tests/login.spec.js",
-              "line": 9,
-              "column": 17
-            },
-            {
-              "title": "Login Scenario for visual_user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 917,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-21T11:14:20.583Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1b71af24692d2ed6cb3f-4191db684171e8198ac3",
-              "file": "tests/login.spec.js",
-              "line": 9,
-              "column": 17
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "tests\\order.spec.js",
-      "file": "tests/order.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Order Feature - The user performs an order successfully",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 4749,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-21T11:14:07.125Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "5da139496bad9eef41cd-29a02b039d3f138f9b08",
-          "file": "tests/order.spec.js",
-          "line": 20,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "tests\\pet.api.spec.js",
-      "file": "tests/pet.api.spec.js",
+      "title": "tests\\API-Tests\\pet.api.spec.js",
+      "file": "tests/API-Tests/pet.api.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Pet Service API Tests",
-          "file": "tests/pet.api.spec.js",
-          "line": 10,
-          "column": 17,
+          "file": "tests/API-Tests/pet.api.spec.js",
+          "line": 9,
+          "column": 15,
           "specs": [
             {
               "title": "Pet Service - Get pet by id",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -504,25 +96,55 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2147,
-                      "errors": [],
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 140,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Fluffy\"\u001b[39m\nReceived: \u001b[31m\"doggie\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Fluffy\"\u001b[39m\nReceived: \u001b[31m\"doggie\"\u001b[39m\n    at C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js:22:31",
+                        "location": {
+                          "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js",
+                          "column": 31,
+                          "line": 22
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m   test(\u001b[32m'Pet Service - Get pet by id'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 21 |\u001b[39m     \u001b[36mconst\u001b[39m retrievedPet \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[33mPetService\u001b[39m\u001b[33m.\u001b[39mgetById(createdPet\u001b[33m.\u001b[39mid)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     expect(retrievedPet\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(createdPet\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m sleep(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m \n \u001b[90m 24 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js",
+                            "column": 31,
+                            "line": 22
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Fluffy\"\u001b[39m\nReceived: \u001b[31m\"doggie\"\u001b[39m\n\n\u001b[0m \u001b[90m 20 |\u001b[39m   test(\u001b[32m'Pet Service - Get pet by id'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 21 |\u001b[39m     \u001b[36mconst\u001b[39m retrievedPet \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[33mPetService\u001b[39m\u001b[33m.\u001b[39mgetById(createdPet\u001b[33m.\u001b[39mid)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     expect(retrievedPet\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(createdPet\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m sleep(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m \n \u001b[90m 24 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js:22:31\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T11:14:07.056Z",
+                      "startTime": "2025-04-21T15:57:25.017Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "_error-context-0",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Repo\\bg-js-gaming-automation\\test-results\\tests-API-Tests-pet.api-Pe-d52cb-Pet-Service---Get-pet-by-id\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js",
+                        "column": 31,
+                        "line": 22
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "03fc732815e06befb761-aafb3537dbbdde306150",
-              "file": "tests/pet.api.spec.js",
-              "line": 21,
+              "id": "68c36d2f37b8513eee1a-d92bf909e6867a40503d",
+              "file": "tests/API-Tests/pet.api.spec.js",
+              "line": 20,
               "column": 7
             },
             {
@@ -538,25 +160,25 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2154,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T11:14:11.854Z",
+                      "startTime": "2025-04-21T15:57:27.958Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
-              "id": "03fc732815e06befb761-8309dd67cc60bc94d6a6",
-              "file": "tests/pet.api.spec.js",
-              "line": 27,
+              "id": "68c36d2f37b8513eee1a-dff18988b8a865fab6eb",
+              "file": "tests/API-Tests/pet.api.spec.js",
+              "line": 26,
               "column": 7
             },
             {
@@ -572,25 +194,25 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2140,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T11:14:14.011Z",
+                      "startTime": "2025-04-21T15:57:27.960Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
-              "id": "03fc732815e06befb761-d4124b5094f98bfbb985",
-              "file": "tests/pet.api.spec.js",
-              "line": 34,
+              "id": "68c36d2f37b8513eee1a-a8fae3bb1627a7aff5de",
+              "file": "tests/API-Tests/pet.api.spec.js",
+              "line": 33,
               "column": 7
             },
             {
@@ -606,25 +228,25 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 138,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T11:14:16.154Z",
+                      "startTime": "2025-04-21T15:57:27.962Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
-              "id": "03fc732815e06befb761-f2a3fdc1d372a8995afe",
-              "file": "tests/pet.api.spec.js",
-              "line": 40,
+              "id": "68c36d2f37b8513eee1a-7502cb0905ae737cb80e",
+              "file": "tests/API-Tests/pet.api.spec.js",
+              "line": 39,
               "column": 7
             }
           ]
@@ -632,15 +254,15 @@
       ]
     },
     {
-      "title": "tests\\store.api.spec.js",
-      "file": "tests/store.api.spec.js",
+      "title": "tests\\API-Tests\\store.api.spec.js",
+      "file": "tests/API-Tests/store.api.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Store Service API Tests",
-          "file": "tests/store.api.spec.js",
+          "file": "tests/API-Tests/store.api.spec.js",
           "line": 9,
           "column": 17,
           "specs": [
@@ -657,15 +279,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2158,
+                      "duration": 2160,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T11:14:07.167Z",
+                      "startTime": "2025-04-21T15:57:24.988Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -673,8 +295,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "942a980d0ffa4c56e150-a10485804b94ab68ea3d",
-              "file": "tests/store.api.spec.js",
+              "id": "555e0e20b578094b7ecd-a1c6c822d43771aae023",
+              "file": "tests/API-Tests/store.api.spec.js",
               "line": 19,
               "column": 7
             },
@@ -691,15 +313,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2179,
+                      "duration": 2169,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T11:14:12.010Z",
+                      "startTime": "2025-04-21T15:57:29.956Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -707,14 +329,14 @@
                   "status": "expected"
                 }
               ],
-              "id": "942a980d0ffa4c56e150-8b7c578a7e74644f2f45",
-              "file": "tests/store.api.spec.js",
+              "id": "555e0e20b578094b7ecd-47ddedd4d4d9e7f0c791",
+              "file": "tests/API-Tests/store.api.spec.js",
               "line": 25,
               "column": 7
             },
             {
               "title": "Store Service - Get deleted order should fail",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -725,68 +347,446 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "failed",
-                      "duration": 135,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m\n    at C:\\Repo\\bg-js-gaming-automation\\tests\\store.api.spec.js:36:27",
-                        "location": {
-                          "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\store.api.spec.js",
-                          "column": 27,
-                          "line": 36
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 34 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Expected error but got success'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// safety fallback\u001b[39m\n \u001b[90m 35 |\u001b[39m     } \u001b[36mcatch\u001b[39m (err) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'API Error: 404'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Order not found'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     }\n \u001b[90m 39 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\store.api.spec.js",
-                            "column": 27,
-                            "line": 36
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m\n\n\u001b[0m \u001b[90m 34 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Expected error but got success'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// safety fallback\u001b[39m\n \u001b[90m 35 |\u001b[39m     } \u001b[36mcatch\u001b[39m (err) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'API Error: 404'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Order not found'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     }\n \u001b[90m 39 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Repo\\bg-js-gaming-automation\\tests\\store.api.spec.js:36:27\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 173,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T11:14:14.192Z",
+                      "startTime": "2025-04-21T15:57:32.128Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "_error-context-0",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Repo\\bg-js-gaming-automation\\test-results\\tests-store.api-Store-Serv-e6cf4-t-deleted-order-should-fail\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\store.api.spec.js",
-                        "column": 27,
-                        "line": 36
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "942a980d0ffa4c56e150-795b3c4c9cc1e130a8b0",
-              "file": "tests/store.api.spec.js",
+              "id": "555e0e20b578094b7ecd-23cdf7d312b15897adac",
+              "file": "tests/API-Tests/store.api.spec.js",
               "line": 31,
               "column": 7
             }
           ]
         }
       ]
+    },
+    {
+      "title": "tests\\UI-Tests\\catalogue.spec.js",
+      "file": "tests/UI-Tests/catalogue.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Catalogue Feature - Products loaded within catalogue are verified against api reponse",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 4412,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:57:25.154Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0ed2d4fa124b43398db1-a5b3cb399020f577c912",
+          "file": "tests/UI-Tests/catalogue.spec.js",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "Catalogue Feature - Adding or Removing Products to cart will increase or decrease number of items in cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 2362,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:57:29.689Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0ed2d4fa124b43398db1-544f7e9f4c05abec6191",
+          "file": "tests/UI-Tests/catalogue.spec.js",
+          "line": 30,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\UI-Tests\\login.spec.js",
+      "file": "tests/UI-Tests/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login Feature - Login and Logout Successfully Scenario",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 1822,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:57:39.658Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "54ae1f9a915a54c80e5d-2cc35c77493777d0cc1f",
+          "file": "tests/UI-Tests/login.spec.js",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "Login Feature - Login Negative Path -Incorrect Password Scenario",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 826,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:57:41.483Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "54ae1f9a915a54c80e5d-5a7eec087433370a1e8a",
+          "file": "tests/UI-Tests/login.spec.js",
+          "line": 32,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "Login Feature - Login Tests for Multiple Users Scenario",
+          "file": "tests/UI-Tests/login.spec.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login Scenario for standard_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3940,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:57:25.158Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "54ae1f9a915a54c80e5d-785a7f9f4877265f1fff",
+              "file": "tests/UI-Tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            },
+            {
+              "title": "Login Scenario for locked_out_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1080,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:57:29.237Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "54ae1f9a915a54c80e5d-a44e95f07a81e0194cd1",
+              "file": "tests/UI-Tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            },
+            {
+              "title": "Login Scenario for problem_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 914,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:57:30.322Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "54ae1f9a915a54c80e5d-8fbc97e158f7e166e435",
+              "file": "tests/UI-Tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            },
+            {
+              "title": "Login Scenario for performance_glitch_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6122,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:57:31.240Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "54ae1f9a915a54c80e5d-bdd4510d7aac169257eb",
+              "file": "tests/UI-Tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            },
+            {
+              "title": "Login Scenario for error_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 804,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:57:37.366Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "54ae1f9a915a54c80e5d-ec88164d7e0044f5338d",
+              "file": "tests/UI-Tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            },
+            {
+              "title": "Login Scenario for visual_user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1482,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T15:57:38.173Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "54ae1f9a915a54c80e5d-36c8d9957b517cee474d",
+              "file": "tests/UI-Tests/login.spec.js",
+              "line": 9,
+              "column": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\UI-Tests\\order.spec.js",
+      "file": "tests/UI-Tests/order.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Order Feature - The user performs an order successfully",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 4705,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-21T15:57:25.118Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9861dc5ba19a63beb32c-b3c6300496ff659879a1",
+          "file": "tests/UI-Tests/order.spec.js",
+          "line": 20,
+          "column": 1
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-21T11:14:05.687Z",
-    "duration": 18622.603,
-    "expected": 17,
-    "skipped": 0,
+    "startTime": "2025-04-21T15:57:23.612Z",
+    "duration": 18792.822999999997,
+    "expected": 14,
+    "skipped": 3,
     "unexpected": 1,
     "flaky": 0
   }

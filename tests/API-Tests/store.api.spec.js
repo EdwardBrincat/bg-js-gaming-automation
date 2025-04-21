@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import StoreService from '../api-clients/Store/storeService.js';
-import petStore from  '../test-data/PetStore.js'; 
+import StoreService from '../../api-clients/Store/storeService.js';
+import petStore from  '../../test-data/PetStore.js'; 
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
