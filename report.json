@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 5
     },
     "preserveOutput": "always",
     "reporter": [
@@ -50,7 +50,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 5
         },
         "id": "",
         "name": "",
@@ -92,12 +92,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3566,
+                  "duration": 4524,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-19T07:36:30.614Z",
+                  "startTime": "2025-04-21T11:14:07.040Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -126,12 +126,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3426,
+                  "duration": 2460,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-19T07:36:34.519Z",
+                  "startTime": "2025-04-21T11:14:11.732Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -168,12 +168,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 2438,
+                  "duration": 1852,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-19T07:36:46.271Z",
+                  "startTime": "2025-04-21T11:14:21.504Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -202,12 +202,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 1333,
+                  "duration": 869,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-19T07:36:48.721Z",
+                  "startTime": "2025-04-21T11:14:23.359Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -244,12 +244,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2149,
+                      "duration": 4054,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-19T07:36:30.706Z",
+                      "startTime": "2025-04-21T11:14:07.138Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -278,12 +278,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1646,
+                      "duration": 1306,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-19T07:36:33.511Z",
+                      "startTime": "2025-04-21T11:14:11.343Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -312,12 +312,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1532,
+                      "duration": 1012,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-19T07:36:35.168Z",
+                      "startTime": "2025-04-21T11:14:12.654Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -346,12 +346,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 6765,
+                      "duration": 6044,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-19T07:36:36.709Z",
+                      "startTime": "2025-04-21T11:14:13.669Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -380,12 +380,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1356,
+                      "duration": 865,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-19T07:36:43.482Z",
+                      "startTime": "2025-04-21T11:14:19.716Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -414,12 +414,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1421,
+                      "duration": 917,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-19T07:36:44.844Z",
+                      "startTime": "2025-04-21T11:14:20.583Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -458,12 +458,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 4061,
+                  "duration": 4749,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-19T07:36:30.647Z",
+                  "startTime": "2025-04-21T11:14:07.125Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -477,15 +477,317 @@
           "column": 1
         }
       ]
+    },
+    {
+      "title": "tests\\pet.api.spec.js",
+      "file": "tests/pet.api.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Pet Service API Tests",
+          "file": "tests/pet.api.spec.js",
+          "line": 10,
+          "column": 17,
+          "specs": [
+            {
+              "title": "Pet Service - Get pet by id",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2147,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T11:14:07.056Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "03fc732815e06befb761-aafb3537dbbdde306150",
+              "file": "tests/pet.api.spec.js",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "Pet Service - Update existing pet",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2154,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T11:14:11.854Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "03fc732815e06befb761-8309dd67cc60bc94d6a6",
+              "file": "tests/pet.api.spec.js",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "Pet Service - Delete pet",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2140,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T11:14:14.011Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "03fc732815e06befb761-d4124b5094f98bfbb985",
+              "file": "tests/pet.api.spec.js",
+              "line": 34,
+              "column": 7
+            },
+            {
+              "title": "Pet Service - Get deleted pet should fail",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 138,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T11:14:16.154Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "03fc732815e06befb761-f2a3fdc1d372a8995afe",
+              "file": "tests/pet.api.spec.js",
+              "line": 40,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\store.api.spec.js",
+      "file": "tests/store.api.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Store Service API Tests",
+          "file": "tests/store.api.spec.js",
+          "line": 9,
+          "column": 17,
+          "specs": [
+            {
+              "title": "Store Service - Get order by id",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 2158,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T11:14:07.167Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "942a980d0ffa4c56e150-a10485804b94ab68ea3d",
+              "file": "tests/store.api.spec.js",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "Store Service - Delete order",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 2179,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T11:14:12.010Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "942a980d0ffa4c56e150-8b7c578a7e74644f2f45",
+              "file": "tests/store.api.spec.js",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "Store Service - Get deleted order should fail",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 135,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m\n    at C:\\Repo\\bg-js-gaming-automation\\tests\\store.api.spec.js:36:27",
+                        "location": {
+                          "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\store.api.spec.js",
+                          "column": 27,
+                          "line": 36
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 34 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Expected error but got success'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// safety fallback\u001b[39m\n \u001b[90m 35 |\u001b[39m     } \u001b[36mcatch\u001b[39m (err) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'API Error: 404'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Order not found'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     }\n \u001b[90m 39 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\store.api.spec.js",
+                            "column": 27,
+                            "line": 36
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m\n\n\u001b[0m \u001b[90m 34 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Expected error but got success'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// safety fallback\u001b[39m\n \u001b[90m 35 |\u001b[39m     } \u001b[36mcatch\u001b[39m (err) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'API Error: 404'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Order not found'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     }\n \u001b[90m 39 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Repo\\bg-js-gaming-automation\\tests\\store.api.spec.js:36:27\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-21T11:14:14.192Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "_error-context-0",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Repo\\bg-js-gaming-automation\\test-results\\tests-store.api-Store-Serv-e6cf4-t-deleted-order-should-fail\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\store.api.spec.js",
+                        "column": 27,
+                        "line": 36
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "942a980d0ffa4c56e150-795b3c4c9cc1e130a8b0",
+              "file": "tests/store.api.spec.js",
+              "line": 31,
+              "column": 7
+            }
+          ]
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-19T07:36:29.548Z",
-    "duration": 21116.550000000003,
-    "expected": 11,
+    "startTime": "2025-04-21T11:14:05.687Z",
+    "duration": 18622.603,
+    "expected": 17,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
