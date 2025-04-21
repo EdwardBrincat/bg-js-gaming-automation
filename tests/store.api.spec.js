@@ -4,7 +4,7 @@ import petStore from  '../test-data/PetStore.js';
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-  }
+}
 
   test.describe.serial('Store Service API Tests', () => {      
   let createdOrder;

@@ -2,12 +2,11 @@ import { test, expect } from '@playwright/test';
 import PetService from '../api-clients/Pet/petService.js';
 import petStore from  '../test-data/PetStore.js'; 
 
-// Create a sleep function
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-  }
+}
 
-  test.describe.serial('Pet Service API Tests', () => {      
+test.describe.serial('Pet Service API Tests', () => {      
   let createdPet;
   let updatedPet;
 
