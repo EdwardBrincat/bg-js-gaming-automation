@@ -85,7 +85,7 @@
           "specs": [
             {
               "title": "Pet Service - Get pet by id",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -98,48 +98,26 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 140,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Fluffy\"\u001b[39m\nReceived: \u001b[31m\"doggie\"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Fluffy\"\u001b[39m\nReceived: \u001b[31m\"doggie\"\u001b[39m\n    at C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js:22:31",
-                        "location": {
-                          "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js",
-                          "column": 31,
-                          "line": 22
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m   test(\u001b[32m'Pet Service - Get pet by id'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 21 |\u001b[39m     \u001b[36mconst\u001b[39m retrievedPet \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[33mPetService\u001b[39m\u001b[33m.\u001b[39mgetById(createdPet\u001b[33m.\u001b[39mid)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     expect(retrievedPet\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(createdPet\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m sleep(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m \n \u001b[90m 24 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
+                      "status": "passed",
+                      "duration": 3322,
+                      "errors": [],
+                      "stdout": [
                         {
-                          "location": {
-                            "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js",
-                            "column": 31,
-                            "line": 22
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Fluffy\"\u001b[39m\nReceived: \u001b[31m\"doggie\"\u001b[39m\n\n\u001b[0m \u001b[90m 20 |\u001b[39m   test(\u001b[32m'Pet Service - Get pet by id'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 21 |\u001b[39m     \u001b[36mconst\u001b[39m retrievedPet \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[33mPetService\u001b[39m\u001b[33m.\u001b[39mgetById(createdPet\u001b[33m.\u001b[39mid)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     expect(retrievedPet\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(createdPet\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m sleep(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m \n \u001b[90m 24 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js:22:31\u001b[22m"
+                          "text": "Retrying getById in 1000ms...\n"
                         }
                       ],
-                      "stdout": [],
-                      "stderr": [],
+                      "stderr": [
+                        {
+                          "text": "getById attempt 1 failed: HTTP 404\n"
+                        }
+                      ],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:25.017Z",
+                      "startTime": "2025-04-22T07:37:27.483Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "_error-context-0",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Repo\\bg-js-gaming-automation\\test-results\\tests-API-Tests-pet.api-Pe-d52cb-Pet-Service---Get-pet-by-id\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js",
-                        "column": 31,
-                        "line": 22
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "68c36d2f37b8513eee1a-d92bf909e6867a40503d",
@@ -160,20 +138,20 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2166,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:27.958Z",
+                      "startTime": "2025-04-22T07:37:33.491Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
               "id": "68c36d2f37b8513eee1a-dff18988b8a865fab6eb",
@@ -194,20 +172,28 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3299,
                       "errors": [],
-                      "stdout": [],
-                      "stderr": [],
+                      "stdout": [
+                        {
+                          "text": "Retrying deletePet in 1000ms...\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "deletePet attempt 1 failed: HTTP 404\n"
+                        }
+                      ],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:27.960Z",
+                      "startTime": "2025-04-22T07:37:35.661Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
               "id": "68c36d2f37b8513eee1a-a8fae3bb1627a7aff5de",
@@ -228,20 +214,20 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 150,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:27.962Z",
+                      "startTime": "2025-04-22T07:37:38.965Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
               "id": "68c36d2f37b8513eee1a-7502cb0905ae737cb80e",
@@ -282,12 +268,20 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2160,
+                      "duration": 3331,
                       "errors": [],
-                      "stdout": [],
-                      "stderr": [],
+                      "stdout": [
+                        {
+                          "text": "Retrying getOrder in 1000ms...\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "getOrder attempt 1 failed: HTTP 404\n"
+                        }
+                      ],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:24.988Z",
+                      "startTime": "2025-04-22T07:37:27.395Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -316,12 +310,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2169,
+                      "duration": 2156,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:29.956Z",
+                      "startTime": "2025-04-22T07:37:33.433Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -350,12 +344,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 173,
+                      "duration": 161,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:32.128Z",
+                      "startTime": "2025-04-22T07:37:35.593Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -394,12 +388,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 4412,
+                  "duration": 4553,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-21T15:57:25.154Z",
+                  "startTime": "2025-04-22T07:37:27.342Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -428,12 +422,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 2362,
+                  "duration": 2433,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-21T15:57:29.689Z",
+                  "startTime": "2025-04-22T07:37:32.049Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -470,12 +464,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 1822,
+                  "duration": 1887,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-21T15:57:39.658Z",
+                  "startTime": "2025-04-22T07:37:41.899Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -504,12 +498,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 826,
+                  "duration": 830,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-21T15:57:41.483Z",
+                  "startTime": "2025-04-22T07:37:43.789Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -546,12 +540,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3940,
+                      "duration": 4126,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:25.158Z",
+                      "startTime": "2025-04-22T07:37:27.426Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -580,12 +574,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1080,
+                      "duration": 946,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:29.237Z",
+                      "startTime": "2025-04-22T07:37:31.720Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -614,12 +608,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 914,
+                      "duration": 1016,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:30.322Z",
+                      "startTime": "2025-04-22T07:37:32.670Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -648,12 +642,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 6122,
+                      "duration": 6094,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:31.240Z",
+                      "startTime": "2025-04-22T07:37:33.693Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -682,12 +676,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 804,
+                      "duration": 1237,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:37.366Z",
+                      "startTime": "2025-04-22T07:37:39.791Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -716,12 +710,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1482,
+                      "duration": 865,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-21T15:57:38.173Z",
+                      "startTime": "2025-04-22T07:37:41.031Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -760,12 +754,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 4,
                   "status": "passed",
-                  "duration": 4705,
+                  "duration": 4706,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-21T15:57:25.118Z",
+                  "startTime": "2025-04-22T07:37:27.477Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -783,11 +777,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-21T15:57:23.612Z",
-    "duration": 18792.822999999997,
-    "expected": 14,
-    "skipped": 3,
-    "unexpected": 1,
+    "startTime": "2025-04-22T07:37:25.997Z",
+    "duration": 18713.867,
+    "expected": 18,
+    "skipped": 0,
+    "unexpected": 0,
     "flaky": 0
   }
 }

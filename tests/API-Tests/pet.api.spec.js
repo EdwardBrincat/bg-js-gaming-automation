@@ -38,7 +38,7 @@ test.describe.serial('Pet Service API Tests', () => {
   
   test('Pet Service - Get deleted pet should fail', async () => {    
     try {
-      await PetService.getById(createdPet.id);
+      await PetService.getByIdNegativeResponse(createdPet.id);
       throw new Error('Expected error but got success');
     } catch (err) {
       expect(err.message).toContain('API Error: 404');

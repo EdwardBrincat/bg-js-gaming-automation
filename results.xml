@@ -1,79 +1,72 @@
-<testsuites id="" name="" tests="18" failures="1" skipped="3" errors="0" time="18.792822999999995">
-<testsuite name="tests\API-Tests\pet.api.spec.js" timestamp="2025-04-21T15:57:23.794Z" hostname="" tests="4" failures="1" skipped="3" time="0.14" errors="0">
-<testcase name="Pet Service API Tests › Pet Service - Get pet by id" classname="tests\API-Tests\pet.api.spec.js" time="0.14">
-<failure message="pet.api.spec.js:20:7 Pet Service - Get pet by id" type="FAILURE">
-<![CDATA[  tests\API-Tests\pet.api.spec.js:20:7 › Pet Service API Tests › Pet Service - Get pet by id ───────
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: "Fluffy"
-    Received: "doggie"
-
-      20 |   test('Pet Service - Get pet by id', async () => {
-      21 |     const retrievedPet = await PetService.getById(createdPet.id);
-    > 22 |     expect(retrievedPet.name).toBe(createdPet.name);
-         |                               ^
-      23 |     await sleep(2000); 
-      24 |   });
-      25 |
-        at C:\Repo\bg-js-gaming-automation\tests\API-Tests\pet.api.spec.js:22:31
-
-    Error Context: test-results\tests-API-Tests-pet.api-Pe-d52cb-Pet-Service---Get-pet-by-id\error-context.md
-]]>
-</failure>
+<testsuites id="" name="" tests="18" failures="0" skipped="0" errors="0" time="18.713866999999997">
+<testsuite name="tests\API-Tests\pet.api.spec.js" timestamp="2025-04-22T07:37:26.060Z" hostname="" tests="4" failures="0" skipped="0" time="8.937" errors="0">
+<testcase name="Pet Service API Tests › Pet Service - Get pet by id" classname="tests\API-Tests\pet.api.spec.js" time="3.322">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\tests-API-Tests-pet.api-Pe-d52cb-Pet-Service---Get-pet-by-id\error-context.md]]
+<![CDATA[Retrying getById in 1000ms...
 ]]>
 </system-out>
+<system-err>
+<![CDATA[getById attempt 1 failed: HTTP 404
+]]>
+</system-err>
 </testcase>
-<testcase name="Pet Service API Tests › Pet Service - Update existing pet" classname="tests\API-Tests\pet.api.spec.js" time="0">
-<skipped>
-</skipped>
+<testcase name="Pet Service API Tests › Pet Service - Update existing pet" classname="tests\API-Tests\pet.api.spec.js" time="2.166">
 </testcase>
-<testcase name="Pet Service API Tests › Pet Service - Delete pet" classname="tests\API-Tests\pet.api.spec.js" time="0">
-<skipped>
-</skipped>
+<testcase name="Pet Service API Tests › Pet Service - Delete pet" classname="tests\API-Tests\pet.api.spec.js" time="3.299">
+<system-out>
+<![CDATA[Retrying deletePet in 1000ms...
+]]>
+</system-out>
+<system-err>
+<![CDATA[deletePet attempt 1 failed: HTTP 404
+]]>
+</system-err>
 </testcase>
-<testcase name="Pet Service API Tests › Pet Service - Get deleted pet should fail" classname="tests\API-Tests\pet.api.spec.js" time="0">
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="tests\API-Tests\store.api.spec.js" timestamp="2025-04-21T15:57:23.794Z" hostname="" tests="3" failures="0" skipped="0" time="4.502" errors="0">
-<testcase name="Store Service API Tests › Store Service - Get order by id" classname="tests\API-Tests\store.api.spec.js" time="2.16">
-</testcase>
-<testcase name="Store Service API Tests › Store Service - Delete order" classname="tests\API-Tests\store.api.spec.js" time="2.169">
-</testcase>
-<testcase name="Store Service API Tests › Store Service - Get deleted order should fail" classname="tests\API-Tests\store.api.spec.js" time="0.173">
+<testcase name="Pet Service API Tests › Pet Service - Get deleted pet should fail" classname="tests\API-Tests\pet.api.spec.js" time="0.15">
 </testcase>
 </testsuite>
-<testsuite name="tests\UI-Tests\catalogue.spec.js" timestamp="2025-04-21T15:57:23.794Z" hostname="" tests="2" failures="0" skipped="0" time="6.774" errors="0">
-<testcase name="Catalogue Feature - Products loaded within catalogue are verified against api reponse" classname="tests\UI-Tests\catalogue.spec.js" time="4.412">
+<testsuite name="tests\API-Tests\store.api.spec.js" timestamp="2025-04-22T07:37:26.060Z" hostname="" tests="3" failures="0" skipped="0" time="5.648" errors="0">
+<testcase name="Store Service API Tests › Store Service - Get order by id" classname="tests\API-Tests\store.api.spec.js" time="3.331">
+<system-out>
+<![CDATA[Retrying getOrder in 1000ms...
+]]>
+</system-out>
+<system-err>
+<![CDATA[getOrder attempt 1 failed: HTTP 404
+]]>
+</system-err>
 </testcase>
-<testcase name="Catalogue Feature - Adding or Removing Products to cart will increase or decrease number of items in cart" classname="tests\UI-Tests\catalogue.spec.js" time="2.362">
+<testcase name="Store Service API Tests › Store Service - Delete order" classname="tests\API-Tests\store.api.spec.js" time="2.156">
 </testcase>
-</testsuite>
-<testsuite name="tests\UI-Tests\login.spec.js" timestamp="2025-04-21T15:57:23.794Z" hostname="" tests="8" failures="0" skipped="0" time="16.99" errors="0">
-<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for standard_user" classname="tests\UI-Tests\login.spec.js" time="3.94">
-</testcase>
-<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for locked_out_user" classname="tests\UI-Tests\login.spec.js" time="1.08">
-</testcase>
-<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for problem_user" classname="tests\UI-Tests\login.spec.js" time="0.914">
-</testcase>
-<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for performance_glitch_user" classname="tests\UI-Tests\login.spec.js" time="6.122">
-</testcase>
-<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for error_user" classname="tests\UI-Tests\login.spec.js" time="0.804">
-</testcase>
-<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for visual_user" classname="tests\UI-Tests\login.spec.js" time="1.482">
-</testcase>
-<testcase name="Login Feature - Login and Logout Successfully Scenario" classname="tests\UI-Tests\login.spec.js" time="1.822">
-</testcase>
-<testcase name="Login Feature - Login Negative Path -Incorrect Password Scenario" classname="tests\UI-Tests\login.spec.js" time="0.826">
+<testcase name="Store Service API Tests › Store Service - Get deleted order should fail" classname="tests\API-Tests\store.api.spec.js" time="0.161">
 </testcase>
 </testsuite>
-<testsuite name="tests\UI-Tests\order.spec.js" timestamp="2025-04-21T15:57:23.794Z" hostname="" tests="1" failures="0" skipped="0" time="4.705" errors="0">
-<testcase name="Order Feature - The user performs an order successfully" classname="tests\UI-Tests\order.spec.js" time="4.705">
+<testsuite name="tests\UI-Tests\catalogue.spec.js" timestamp="2025-04-22T07:37:26.060Z" hostname="" tests="2" failures="0" skipped="0" time="6.986" errors="0">
+<testcase name="Catalogue Feature - Products loaded within catalogue are verified against api reponse" classname="tests\UI-Tests\catalogue.spec.js" time="4.553">
+</testcase>
+<testcase name="Catalogue Feature - Adding or Removing Products to cart will increase or decrease number of items in cart" classname="tests\UI-Tests\catalogue.spec.js" time="2.433">
+</testcase>
+</testsuite>
+<testsuite name="tests\UI-Tests\login.spec.js" timestamp="2025-04-22T07:37:26.060Z" hostname="" tests="8" failures="0" skipped="0" time="17.001" errors="0">
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for standard_user" classname="tests\UI-Tests\login.spec.js" time="4.126">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for locked_out_user" classname="tests\UI-Tests\login.spec.js" time="0.946">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for problem_user" classname="tests\UI-Tests\login.spec.js" time="1.016">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for performance_glitch_user" classname="tests\UI-Tests\login.spec.js" time="6.094">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for error_user" classname="tests\UI-Tests\login.spec.js" time="1.237">
+</testcase>
+<testcase name="Login Feature - Login Tests for Multiple Users Scenario › Login Scenario for visual_user" classname="tests\UI-Tests\login.spec.js" time="0.865">
+</testcase>
+<testcase name="Login Feature - Login and Logout Successfully Scenario" classname="tests\UI-Tests\login.spec.js" time="1.887">
+</testcase>
+<testcase name="Login Feature - Login Negative Path -Incorrect Password Scenario" classname="tests\UI-Tests\login.spec.js" time="0.83">
+</testcase>
+</testsuite>
+<testsuite name="tests\UI-Tests\order.spec.js" timestamp="2025-04-22T07:37:26.060Z" hostname="" tests="1" failures="0" skipped="0" time="4.706" errors="0">
+<testcase name="Order Feature - The user performs an order successfully" classname="tests\UI-Tests\order.spec.js" time="4.706">
 </testcase>
 </testsuite>
 </testsuites>

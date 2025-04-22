@@ -30,7 +30,7 @@ function sleep(ms) {
   
   test('Store Service - Get deleted order should fail', async () => {    
     try {
-      await StoreService.getOrder(createdOrder.id);
+      await StoreService.getOrderNegativeResponse(createdOrder.id);
       throw new Error('Expected error but got success'); // safety fallback
     } catch (err) {
       expect(err.message).toContain('API Error: 404');
