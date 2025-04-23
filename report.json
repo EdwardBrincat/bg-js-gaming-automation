@@ -99,20 +99,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3322,
+                      "duration": 2162,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Retrying getById in 1000ms...\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "getById attempt 1 failed: HTTP 404\n"
-                        }
-                      ],
+                      "stdout": [],
+                      "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:27.483Z",
+                      "startTime": "2025-04-22T13:15:30.746Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -141,12 +133,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2166,
+                      "duration": 2160,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:33.491Z",
+                      "startTime": "2025-04-22T13:15:35.597Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -175,20 +167,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3299,
+                      "duration": 2177,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Retrying deletePet in 1000ms...\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "deletePet attempt 1 failed: HTTP 404\n"
-                        }
-                      ],
+                      "stdout": [],
+                      "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:35.661Z",
+                      "startTime": "2025-04-22T13:15:37.759Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -203,7 +187,7 @@
             },
             {
               "title": "Pet Service - Get deleted pet should fail",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -216,18 +200,56 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 150,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
+                      "status": "failed",
+                      "duration": 1305,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m\n    at C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js:44:27",
+                        "location": {
+                          "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js",
+                          "column": 27,
+                          "line": 44
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 42 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Expected error but got success'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     } \u001b[36mcatch\u001b[39m (err) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'API Error: 404'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Pet not found'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m     }\n \u001b[90m 47 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js",
+                            "column": 27,
+                            "line": 44
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m\n\n\u001b[0m \u001b[90m 42 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Expected error but got success'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     } \u001b[36mcatch\u001b[39m (err) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'API Error: 404'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Pet not found'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m     }\n \u001b[90m 47 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js:44:27\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Retrying getById in 1000ms...\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "getById attempt 1 failed: HTTP 200\n"
+                        }
+                      ],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:38.965Z",
+                      "startTime": "2025-04-22T13:15:39.940Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "_error-context-0",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Repo\\bg-js-gaming-automation\\test-results\\tests-API-Tests-pet.api-Pe-d6bff-Get-deleted-pet-should-fail\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\pet.api.spec.js",
+                        "column": 27,
+                        "line": 44
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "68c36d2f37b8513eee1a-7502cb0905ae737cb80e",
@@ -268,20 +290,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3331,
+                      "duration": 2162,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Retrying getOrder in 1000ms...\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "getOrder attempt 1 failed: HTTP 404\n"
-                        }
-                      ],
+                      "stdout": [],
+                      "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:27.395Z",
+                      "startTime": "2025-04-22T13:15:30.777Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -310,12 +324,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2156,
+                      "duration": 2159,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:33.433Z",
+                      "startTime": "2025-04-22T13:15:35.643Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -330,7 +344,7 @@
             },
             {
               "title": "Store Service - Get deleted order should fail",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -343,18 +357,98 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 161,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
+                      "status": "failed",
+                      "duration": 9307,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m\n    at C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\store.api.spec.js:36:27",
+                        "location": {
+                          "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\store.api.spec.js",
+                          "column": 27,
+                          "line": 36
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 34 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Expected error but got success'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// safety fallback\u001b[39m\n \u001b[90m 35 |\u001b[39m     } \u001b[36mcatch\u001b[39m (err) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'API Error: 404'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Order not found'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     }\n \u001b[90m 39 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\store.api.spec.js",
+                            "column": 27,
+                            "line": 36
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"API Error: 404\"\u001b[39m\nReceived string:    \u001b[31m\"Expected error but got success\"\u001b[39m\n\n\u001b[0m \u001b[90m 34 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Expected error but got success'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// safety fallback\u001b[39m\n \u001b[90m 35 |\u001b[39m     } \u001b[36mcatch\u001b[39m (err) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'API Error: 404'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       expect(err\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'Order not found'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     }\n \u001b[90m 39 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\store.api.spec.js:36:27\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Retrying getOrder in 1000ms...\n"
+                        },
+                        {
+                          "text": "Retrying getOrder in 1000ms...\n"
+                        },
+                        {
+                          "text": "Retrying getOrder in 1000ms...\n"
+                        },
+                        {
+                          "text": "Retrying getOrder in 1000ms...\n"
+                        },
+                        {
+                          "text": "Retrying getOrder in 1000ms...\n"
+                        },
+                        {
+                          "text": "Retrying getOrder in 1000ms...\n"
+                        },
+                        {
+                          "text": "Retrying getOrder in 1000ms...\n"
+                        },
+                        {
+                          "text": "Retrying getOrder in 1000ms...\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "getOrder attempt 1 failed: HTTP 200\n"
+                        },
+                        {
+                          "text": "getOrder attempt 1 failed: HTTP 404\n"
+                        },
+                        {
+                          "text": "getOrder attempt 1 failed: HTTP 404\n"
+                        },
+                        {
+                          "text": "getOrder attempt 1 failed: HTTP 404\n"
+                        },
+                        {
+                          "text": "getOrder attempt 1 failed: HTTP 404\n"
+                        },
+                        {
+                          "text": "getOrder attempt 1 failed: HTTP 404\n"
+                        },
+                        {
+                          "text": "getOrder attempt 1 failed: HTTP 404\n"
+                        },
+                        {
+                          "text": "getOrder attempt 1 failed: HTTP 404\n"
+                        }
+                      ],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:35.593Z",
+                      "startTime": "2025-04-22T13:15:37.806Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "_error-context-0",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Repo\\bg-js-gaming-automation\\test-results\\tests-API-Tests-store.api--695d2-t-deleted-order-should-fail\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Repo\\bg-js-gaming-automation\\tests\\API-Tests\\store.api.spec.js",
+                        "column": 27,
+                        "line": 36
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "555e0e20b578094b7ecd-23cdf7d312b15897adac",
@@ -388,12 +482,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 4553,
+                  "duration": 1591,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-22T07:37:27.342Z",
+                  "startTime": "2025-04-22T13:15:30.846Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -422,12 +516,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 2433,
+                  "duration": 2326,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-22T07:37:32.049Z",
+                  "startTime": "2025-04-22T13:15:32.718Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -464,12 +558,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 1887,
+                  "duration": 1791,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-22T07:37:41.899Z",
+                  "startTime": "2025-04-22T13:15:41.809Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -498,12 +592,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 830,
+                  "duration": 798,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-22T07:37:43.789Z",
+                  "startTime": "2025-04-22T13:15:43.604Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -540,12 +634,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4126,
+                      "duration": 1227,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:27.426Z",
+                      "startTime": "2025-04-22T13:15:30.832Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -574,12 +668,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 946,
+                      "duration": 898,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:31.720Z",
+                      "startTime": "2025-04-22T13:15:32.367Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -608,12 +702,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1016,
+                      "duration": 887,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:32.670Z",
+                      "startTime": "2025-04-22T13:15:33.269Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -642,12 +736,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 6094,
+                      "duration": 6010,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:33.693Z",
+                      "startTime": "2025-04-22T13:15:34.160Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -676,12 +770,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1237,
+                      "duration": 805,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:39.791Z",
+                      "startTime": "2025-04-22T13:15:40.173Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -710,12 +804,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 865,
+                      "duration": 825,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-22T07:37:41.031Z",
+                      "startTime": "2025-04-22T13:15:40.981Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -754,12 +848,12 @@
                   "workerIndex": 4,
                   "parallelIndex": 4,
                   "status": "passed",
-                  "duration": 4706,
+                  "duration": 1871,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-22T07:37:27.477Z",
+                  "startTime": "2025-04-22T13:15:30.872Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -777,11 +871,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-22T07:37:25.997Z",
-    "duration": 18713.867,
-    "expected": 18,
+    "startTime": "2025-04-22T13:15:29.491Z",
+    "duration": 17658.09,
+    "expected": 16,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }

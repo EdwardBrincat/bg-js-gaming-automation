@@ -9,7 +9,7 @@ function sleep(ms) {
   test.describe.serial('Store Service API Tests', () => {      
   let createdOrder;
 
-  test.beforeAll(async () => {    
+  test.beforeAll('Store Service - Add a new order', async () => {    
     const randomId = Math.floor(Math.random() * 10) + 1;
     const uniqueOrder = { ...petStore.newOrder, id: randomId };
     createdOrder = await StoreService.Order(uniqueOrder);

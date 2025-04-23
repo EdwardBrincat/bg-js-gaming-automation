@@ -10,7 +10,7 @@ test.describe.serial('Pet Service API Tests', () => {
   let createdPet;
   let updatedPet;
 
-  test.beforeAll(async () => {    
+  test.beforeAll('Pet Service - Add a new Pet', async () => {    
     const randomId = Math.floor(Math.random() * 100) + 1;
     const uniquePet = { ...petStore.newPet, id: randomId };
     createdPet = await PetService.addNewPet(uniquePet);
